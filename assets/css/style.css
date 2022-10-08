@@ -95,11 +95,11 @@ header nav .nav-link:hover {
   max-width: 100vw;
 
   padding-top: 120px;
-  padding-left: var(--left-space);
   background-color: #f2c600;
 
   display: flex;
-  gap: 150px;
+  gap: 20px;
+  justify-content: space-evenly;
   clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 }
 #about-section img {
@@ -112,9 +112,50 @@ header nav .nav-link:hover {
 }
 #about-section p {
   font-size: 1.2rem;
-  width: 70%;
+  width: 420px;
   text-align: justify;
   line-height: 1.5;
+}
+/* --------------------------- */
+/*        work section         */
+/* --------------------------- */
+#work-section {
+  width: calc(100vw - var(--glitched-value));
+  max-width: 100vw;
+  min-height: 100vh;
+}
+#work-section > h1 {
+  font-size: 3rem;
+  line-height: 2;
+  text-align: center;
+  margin: 5rem;
+}
+#work-section #projects {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+#work-section #projects .project {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  gap: 50px;
+}
+#work-section #projects .project .project-img {
+  width: 580px;
+  height: 300px;
+  object-fit: fill;
+}
+#work-section #projects .project .project-title {
+  font-size: 2rem;
+  line-height: 2;
+}
+#work-section #projects .project .project-details {
+  width: 420px;
+  line-height: 1.5;
+  font-size: 1.3rem;
+  text-align: justify;
 }
 /* ---------------------------- */
 /*        general classes       */
