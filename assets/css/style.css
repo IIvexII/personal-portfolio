@@ -123,18 +123,20 @@ header nav .nav-link:hover {
   width: calc(100vw - var(--glitched-value));
   max-width: 100vw;
   min-height: 100vh;
+  padding-top: 50px;
+  margin-bottom: 10rem;
 }
 #work-section > h1 {
   font-size: 3rem;
   line-height: 2;
   text-align: center;
-  margin: 5rem;
+  margin-bottom: 5rem;
 }
 #work-section #projects {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 150px;
 }
 #work-section #projects .project {
   display: flex;
@@ -157,6 +159,26 @@ header nav .nav-link:hover {
   font-size: 1.3rem;
   text-align: justify;
 }
+/* --------------------------- */
+/*       Contact section       */
+/* --------------------------- */
+#contact-me {
+  background: var(--prime-gradient);
+  height: 380px;
+  width: calc(100vw - var(--glitched-value));
+  clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
+
+  text-align: center;
+  padding-top: 90px;
+}
+#contact-me h1 {
+  font-size: 3rem;
+  line-height: 2;
+}
+#contact-me p {
+  font-size: 1.7rem;
+}
+
 /* ---------------------------- */
 /*        general classes       */
 /* ---------------------------- */
