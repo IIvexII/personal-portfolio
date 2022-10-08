@@ -1,11 +1,11 @@
 :root {
   /* General */
   --primary-color: #fdce00;
-  --secondary-color: #3c2710;
+  --secondary-color: #22160a;
   --text-gradient: linear-gradient(170deg, #e99904, var(--primary-color));
   --prime-gradient: linear-gradient(30deg, var(--primary-color), #e99904);
   --left-space: 150px;
-  --glitched-value: 15px;
+  --view-width: calc(100vw - 15px);
 
   /* Header width for calculations */
   --header-width: 80px;
@@ -72,7 +72,7 @@ header nav .nav-link:hover {
    * exceed the view-width and 
    * view height.
    ----------------------------*/
-  width: calc(100vw - var(--glitched-value));
+  width: var(--view-width);
   max-width: 100vw;
   height: calc(100vh - var(--header-width));
   max-height: 100vh;
@@ -91,7 +91,7 @@ header nav .nav-link:hover {
   height: 100vh;
   max-height: 100vh;
   min-height: 657px;
-  width: calc(100vw - var(--glitched-value));
+  width: var(--view-width);
   max-width: 100vw;
 
   padding-top: 120px;
@@ -120,7 +120,7 @@ header nav .nav-link:hover {
 /*        work section         */
 /* --------------------------- */
 #work-section {
-  width: calc(100vw - var(--glitched-value));
+  width: var(--view-width);
   max-width: 100vw;
   min-height: 100vh;
   padding-top: 50px;
@@ -165,7 +165,7 @@ header nav .nav-link:hover {
 #contact-me {
   background: var(--prime-gradient);
   height: 380px;
-  width: calc(100vw - var(--glitched-value));
+  width: var(--view-width);
   clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%);
 
   text-align: center;
@@ -177,6 +177,21 @@ header nav .nav-link:hover {
 }
 #contact-me p {
   font-size: 1.7rem;
+}
+
+/* ---------------------- */
+/*        footer          */
+/* ---------------------- */
+footer {
+  width: var(--view-width);
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+footer p,
+footer a {
+  color: var(--primary-color);
+  font-size: 1.3rem;
+  padding: 10px 0;
 }
 
 /* ---------------------------- */
